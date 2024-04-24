@@ -1,0 +1,25 @@
+service: siewlee-aws-node-http-api-project
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  getapi:
+    handler: index.handler
+    events:
+      - httpApi:
+          path: /get
+          method: get
+
+
+  postapi:
+    handler: index.handler2
+    events:
+      - httpApi:
+          path: /post
+          method: post
+
+plugins:
+  - serverless-offline
