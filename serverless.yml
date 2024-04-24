@@ -10,9 +10,8 @@ functions:
     handler: index.handler
     events:
       - httpApi:
-          path: /get
+          path: /
           method: get
-
 
   postapi:
     handler: index.handler2

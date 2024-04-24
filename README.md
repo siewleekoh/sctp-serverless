@@ -14,3 +14,8 @@ serverless deploy
 ```
 sudo npm install serverless-offline --save-dev
 ```
+
+
+```
+serverless remove
+```
