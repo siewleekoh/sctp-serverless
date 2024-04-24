@@ -24,3 +24,11 @@ serverless offline or sls offline.
 ```
 serverless remove
 ```
+
+
+
+## Alternative way to start serverless project on AWS
+
+```
+serverless 
+```
