@@ -4,6 +4,8 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs18.x
+  deploymentBucket:
+    name: cohort5.deployment
 
 functions:
   getapi:
@@ -12,6 +14,8 @@ functions:
       - httpApi:
           path: /
           method: get
+      - sqs:
+          arn: arn:aws:sqs:us-east-1:255945442255:siewlee-sqs-serverless
 
   postapi:
     handler: index.secondhandler
