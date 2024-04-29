@@ -1,4 +1,4 @@
-service: siewlee-aws-node-http-api-project
+service: siewlee-serverless-service
 frameworkVersion: '3'
 
 provider:
@@ -7,14 +7,14 @@ provider:
 
 functions:
   getapi:
-    handler: index.handler
+    handler: index.firsthandler
     events:
       - httpApi:
           path: /
           method: get
 
   postapi:
-    handler: index.handler2
+    handler: index.secondhandler
     events:
       - httpApi:
           path: /post

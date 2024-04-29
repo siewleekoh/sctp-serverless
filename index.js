@@ -1,4 +1,5 @@
-module.exports.handler = async (event) => {
+module.exports.firsthandler = async (event) => {
+  console.log(event)
   return {
     statusCode: 200,
     body: JSON.stringify(
@@ -13,7 +14,8 @@ module.exports.handler = async (event) => {
 };
 
 
-module.exports.handler2 = async (event) => {
+module.exports.secondhandler = async (event) => {
+  console.log(event)
   return {
     statusCode: 200,
     body: JSON.stringify(
