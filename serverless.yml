@@ -23,6 +23,18 @@ functions:
       - httpApi:
           path: /post
           method: post
+      - sqs:
+          arn:
+            Fn::GetAtt:
+              - siewleequeue
+              - Arn
+
+resources:
+  Resources:
+    siewleequeue:
+      Type: "AWS::SQS::Queue"
+      Properties:
+        QueueName: "siewlee-queue-serverless"
 
 plugins:
   - serverless-offline
