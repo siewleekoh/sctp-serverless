@@ -40,4 +40,4 @@ jobs:
       - name: reveal secrets
         env:
           MY_SECRET: ${{secrets.TOP_SECRET}} 
-        run: echo "my secret is ${{MY_SECRET}}" | sed 's/./&/g'
+        run: echo "my secret is $MY_SECRET" | sed 's/./&/g'
