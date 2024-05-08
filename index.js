@@ -4,7 +4,7 @@ module.exports.firsthandler = async (event) => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: "Go Serverless v3.0! Your function executed successfully!",
+        message: "This is get function!",
         input: event,
       },
       null,
@@ -20,7 +20,7 @@ module.exports.secondhandler = async (event) => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        message: "post function!",
+        message: "This is post function!",
         input: event,
       },
       null,
