@@ -18,5 +18,8 @@
   "homepage": "https://github.com/siewleekoh/sctp-serverless#readme",
   "devDependencies": {
     "serverless-offline": "^13.3.4"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
   }
 }
